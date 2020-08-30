@@ -25,3 +25,6 @@ $ pylint models/ tests/
 $ cd docs
 $ make html
 ```
+
+### ToDo
+- [] constructor param default value

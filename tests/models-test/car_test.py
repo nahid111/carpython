@@ -4,7 +4,7 @@ testCar.py
 Testing the Car class
 """
 
-class TestCar():
+class TestCar:
 
   def testCar(self, cars):
     """ Testing the car.__str__(self) method

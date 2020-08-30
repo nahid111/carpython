@@ -83,7 +83,8 @@
               <!-- Local TOC -->
               <div class="local-toc"><ul>
 <li><a class="reference internal" href="#">Welcome to Python-Project’s documentation!</a><ul>
-<li><a class="reference internal" href="#car-model">Car Model</a></li>
+<li><a class="reference internal" href="#car">Car</a></li>
+<li><a class="reference internal" href="#carb">CarB</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
@@ -152,14 +153,14 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="module-models.car">
-<span id="welcome-to-python-project-s-documentation"></span><h1>Welcome to Python-Project’s documentation!<a class="headerlink" href="#module-models.car" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="car-model">
-<h2>Car Model<a class="headerlink" href="#car-model" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="module-models.Car">
+<span id="welcome-to-python-project-s-documentation"></span><h1>Welcome to Python-Project’s documentation!<a class="headerlink" href="#module-models.Car" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="car">
+<h2>Car<a class="headerlink" href="#car" title="Permalink to this headline">¶</a></h2>
 <p>Contains a base Car class</p>
 <dl class="py class">
-<dt id="models.car.Car">
-<em class="property">class </em><code class="sig-prename descclassname">models.car.</code><code class="sig-name descname">Car</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">brand</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">model</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">year</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">color</span><span class="o">=</span><span class="default_value">'white'</span></em>, <em class="sig-param"><span class="n">wheels</span><span class="o">=</span><span class="default_value">4</span></em>, <em class="sig-param"><span class="n">horsePower</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">gears</span><span class="o">=</span><span class="default_value">5</span></em><span class="sig-paren">)</span><a class="headerlink" href="#models.car.Car" title="Permalink to this definition">¶</a></dt>
+<dt id="models.Car.Car">
+<em class="property">class </em><code class="sig-prename descclassname">models.Car.</code><code class="sig-name descname">Car</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">brand</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">model</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">year</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">color</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">'White'</span></em>, <em class="sig-param"><span class="n">wheels</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">4</span></em>, <em class="sig-param"><span class="n">horsePower</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">0</span></em>, <em class="sig-param"><span class="n">gears</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">5</span></em><span class="sig-paren">)</span><a class="headerlink" href="#models.Car.Car" title="Permalink to this definition">¶</a></dt>
 <dd><p>This is a conceptual class representation of a simple Car</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -175,8 +176,8 @@
 </dd>
 </dl>
 <dl class="py method">
-<dt id="models.car.Car.accelerate">
-<code class="sig-name descname">accelerate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">val</span><span class="o">=</span><span class="default_value">5</span></em><span class="sig-paren">)</span><a class="headerlink" href="#models.car.Car.accelerate" title="Permalink to this definition">¶</a></dt>
+<dt id="models.Car.Car.accelerate">
+<code class="sig-name descname">accelerate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">val</span><span class="o">=</span><span class="default_value">5</span></em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#models.Car.Car.accelerate" title="Permalink to this definition">¶</a></dt>
 <dd><p>increases speed by amount of val</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -189,8 +190,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="models.car.Car.brake">
-<code class="sig-name descname">brake</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">val</span><span class="o">=</span><span class="default_value">5</span></em><span class="sig-paren">)</span><a class="headerlink" href="#models.car.Car.brake" title="Permalink to this definition">¶</a></dt>
+<dt id="models.Car.Car.brake">
+<code class="sig-name descname">brake</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">val</span><span class="o">=</span><span class="default_value">5</span></em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#models.Car.Car.brake" title="Permalink to this definition">¶</a></dt>
 <dd><p>decreases speed by amount of val</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -203,15 +204,191 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="models.car.Car.start">
-<code class="sig-name descname">start</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#models.car.Car.start" title="Permalink to this definition">¶</a></dt>
-<dd><p>starts the car, sets speed to 1</p>
+<dt id="models.Car.Car.start">
+<code class="sig-name descname">start</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#models.Car.Car.start" title="Permalink to this definition">¶</a></dt>
+<dd><p>starts the car, sets speed to 1
+:return speed: current speed of the car</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="models.car.Car.stop">
-<code class="sig-name descname">stop</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#models.car.Car.stop" title="Permalink to this definition">¶</a></dt>
-<dd><p>stops the car, sets speed to zero</p>
+<dt id="models.Car.Car.stop">
+<code class="sig-name descname">stop</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#models.Car.Car.stop" title="Permalink to this definition">¶</a></dt>
+<dd><p>stops the car, sets speed to zero
+:return speed: current speed of the car</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<span class="target" id="module-models.CarB"></span><div class="section" id="carb">
+<h2>CarB<a class="headerlink" href="#carb" title="Permalink to this headline">¶</a></h2>
+<p>Contains a base Car class with builder</p>
+<dl class="py class">
+<dt id="models.CarB.CarB">
+<em class="property">class </em><code class="sig-prename descclassname">models.CarB.</code><code class="sig-name descname">CarB</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">builder</span></em><span class="sig-paren">)</span><a class="headerlink" href="#models.CarB.CarB" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is a conceptual class representation of a simple Car</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>brand</strong> (<em>str</em><em>, </em><em>optional</em>) – Brand of the car</p></li>
+<li><p><strong>model</strong> (<em>str</em><em>, </em><em>optional</em>) – Model of the car</p></li>
+<li><p><strong>year</strong> (<em>int</em><em>, </em><em>optional</em>) – Year of the car</p></li>
+<li><p><strong>color</strong> (<em>str</em><em>, </em><em>optional</em>) – Color of the car</p></li>
+<li><p><strong>wheels</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of wheels of the car</p></li>
+<li><p><strong>horsePower</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of HorsePower of the car</p></li>
+<li><p><strong>gears</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of Gears of the car</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py class">
+<dt id="models.CarB.CarB.Builder">
+<em class="property">class </em><code class="sig-name descname">Builder</code><a class="headerlink" href="#models.CarB.CarB.Builder" title="Permalink to this definition">¶</a></dt>
+<dd><p>The builder class</p>
+<dl class="py method">
+<dt id="models.CarB.CarB.Builder.brand">
+<code class="sig-name descname">brand</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">brand</span></em><span class="sig-paren">)</span> &#x2192; object<a class="headerlink" href="#models.CarB.CarB.Builder.brand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Builder for the property Brand</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="models.CarB.CarB.Builder.build">
+<code class="sig-name descname">build</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; object<a class="headerlink" href="#models.CarB.CarB.Builder.build" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="models.CarB.CarB.Builder.color">
+<code class="sig-name descname">color</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">color</span></em><span class="sig-paren">)</span> &#x2192; object<a class="headerlink" href="#models.CarB.CarB.Builder.color" title="Permalink to this definition">¶</a></dt>
+<dd><p>Builder for the property Color</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="models.CarB.CarB.Builder.gears">
+<code class="sig-name descname">gears</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">gears</span></em><span class="sig-paren">)</span> &#x2192; object<a class="headerlink" href="#models.CarB.CarB.Builder.gears" title="Permalink to this definition">¶</a></dt>
+<dd><p>Builder for the property Gears</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="models.CarB.CarB.Builder.horsePower">
+<code class="sig-name descname">horsePower</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">horsePower</span></em><span class="sig-paren">)</span> &#x2192; object<a class="headerlink" href="#models.CarB.CarB.Builder.horsePower" title="Permalink to this definition">¶</a></dt>
+<dd><p>Builder for the property HorsePower</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="models.CarB.CarB.Builder.model">
+<code class="sig-name descname">model</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">model</span></em><span class="sig-paren">)</span> &#x2192; object<a class="headerlink" href="#models.CarB.CarB.Builder.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Builder for the property Model</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="models.CarB.CarB.Builder.wheels">
+<code class="sig-name descname">wheels</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">wheels</span><span class="o">=</span><span class="default_value">4</span></em><span class="sig-paren">)</span> &#x2192; object<a class="headerlink" href="#models.CarB.CarB.Builder.wheels" title="Permalink to this definition">¶</a></dt>
+<dd><p>Builder for the property Wheels</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="models.CarB.CarB.Builder.year">
+<code class="sig-name descname">year</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">year</span></em><span class="sig-paren">)</span> &#x2192; object<a class="headerlink" href="#models.CarB.CarB.Builder.year" title="Permalink to this definition">¶</a></dt>
+<dd><p>Builder for the property Year</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py method">
+<dt id="models.CarB.CarB.accelerate">
+<code class="sig-name descname">accelerate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">val</span><span class="o">=</span><span class="default_value">5</span></em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#models.CarB.CarB.accelerate" title="Permalink to this definition">¶</a></dt>
+<dd><p>increases speed by amount of val</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>val</strong> – speed unit to be increased</p>
+</dd>
+<dt class="field-even">Return speed</dt>
+<dd class="field-even"><p>current speed of the car</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="models.CarB.CarB.brake">
+<code class="sig-name descname">brake</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">val</span><span class="o">=</span><span class="default_value">5</span></em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#models.CarB.CarB.brake" title="Permalink to this definition">¶</a></dt>
+<dd><p>decreases speed by amount of val</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>val</strong> – speed unit to be decreased</p>
+</dd>
+<dt class="field-even">Return speed</dt>
+<dd class="field-even"><p>current speed of the car</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="models.CarB.CarB.getBrand">
+<code class="sig-name descname">getBrand</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#models.CarB.CarB.getBrand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Getter for the property Brand
+:return brand: brand of the car</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="models.CarB.CarB.getColor">
+<code class="sig-name descname">getColor</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#models.CarB.CarB.getColor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Getter for the property Color
+:return color: color of the car</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="models.CarB.CarB.getGears">
+<code class="sig-name descname">getGears</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#models.CarB.CarB.getGears" title="Permalink to this definition">¶</a></dt>
+<dd><p>Getter for the property Gears
+:return gears: gears of the car</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="models.CarB.CarB.getHorsePower">
+<code class="sig-name descname">getHorsePower</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#models.CarB.CarB.getHorsePower" title="Permalink to this definition">¶</a></dt>
+<dd><p>Getter for the property HorsePower
+:return speed: speed of the car</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="models.CarB.CarB.getModel">
+<code class="sig-name descname">getModel</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#models.CarB.CarB.getModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Getter for the property Model
+:return model: model of the car</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="models.CarB.CarB.getSpeed">
+<code class="sig-name descname">getSpeed</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#models.CarB.CarB.getSpeed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Getter for the property Speed
+:return speed: speed of the car</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="models.CarB.CarB.getWheels">
+<code class="sig-name descname">getWheels</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#models.CarB.CarB.getWheels" title="Permalink to this definition">¶</a></dt>
+<dd><p>Getter for the property Wheels
+:return wheels: wheels of the car</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="models.CarB.CarB.getYear">
+<code class="sig-name descname">getYear</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#models.CarB.CarB.getYear" title="Permalink to this definition">¶</a></dt>
+<dd><p>Getter for the property Year
+:return year: year of the car</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="models.CarB.CarB.start">
+<code class="sig-name descname">start</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#models.CarB.CarB.start" title="Permalink to this definition">¶</a></dt>
+<dd><p>starts the car, sets speed to 1
+:return speed: current speed of the car</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="models.CarB.CarB.stop">
+<code class="sig-name descname">stop</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#models.CarB.CarB.stop" title="Permalink to this definition">¶</a></dt>
+<dd><p>stops the car, sets speed to zero
+:return speed: current speed of the car</p>
 </dd></dl>
 
 </dd></dl>

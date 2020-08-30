@@ -1,5 +1,5 @@
 """
-Car Model
+Car
 -------------------------
 Contains a base Car class
 """

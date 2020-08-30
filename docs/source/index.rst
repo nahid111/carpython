@@ -6,7 +6,9 @@
 Welcome to Python-Project's documentation!
 ==========================================
 
-.. automodule:: models.car
+.. automodule:: models.Car
+    :members:
+.. automodule:: models.CarB
     :members:
 
 .. toctree::

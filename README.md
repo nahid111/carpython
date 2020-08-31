@@ -1,3 +1,8 @@
+### Run cloud-build-local
+```bash
+$ cloud-build-local --dryrun=false .
+```
+
 ### Run Tests
 ```bash
 $ pytest tests/

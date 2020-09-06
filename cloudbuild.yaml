@@ -1,25 +1,24 @@
 steps:
 # This step runs the unit-tests
 - id: Testing
-  name: 'python:3.7-slim'
+  name: 'python:3.7.6-slim'
   entrypoint: /bin/sh
   args:
   - -c
   - 'pip install -r requirements.txt && pytest tests/'
 # This step runs linting
 - id: Linting
-  name: 'python:3.7-slim'
+  name: 'python:3.7.6-slim'
   entrypoint: /bin/sh
   args:
   - -c
   - 'pip install -r requirements.txt && pylint models/ tests/'
 # This step Generates the Docs
 - id: Documenting
-  name: 'python:3.7-slim'
+  name: 'python:3.7.6-slim'
   entrypoint: 'bash'
   args:
   - -c
   - 'pip install -r requirements.txt'
   - 'cd docs/'
   - 'make html'
-

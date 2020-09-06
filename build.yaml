@@ -1,0 +1,39 @@
+steps:
+
+# This step installs the dependencies
+- id: Dependencies
+  name: 'python:3.7.6-slim'
+  entrypoint: /bin/sh
+  args:
+  - -c
+  - 'pip install -r requirements.txt'
+
+# This step runs linting
+- id: Linting
+  name: 'python:3.7.6-slim'
+  entrypoint: /bin/sh
+  args:
+  - -c
+  - 'pylint models/ tests/'
+  waitFor: ['Dependencies']
+
+# This step runs the unit-tests
+- id: Testing
+  name: 'python:3.7.6-slim'
+  entrypoint: /bin/sh
+  args:
+  - -c
+  - 'pytest tests/'
+  waitFor: ['Dependencies']
+
+# ================================================
+# This step Generates the Docs
+# - id: Documenting
+#   name: 'python:3.7-slim'
+#   entrypoint: 'bash'
+#   args:
+#   - -c
+#   - 'pip install -r requirements.txt'
+#   - 'cd docs/'
+#   - 'make html'
+

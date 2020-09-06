@@ -140,6 +140,9 @@ class CarB:
   class Builder:
     """The builder class"""
 
+    # def __init__(self):
+    #   self.wheels = 4
+
     def brand(self, brand) -> object:
       """ Builder for the property Brand """
       self.brand = brand
@@ -160,7 +163,7 @@ class CarB:
       self.color = color
       return self
 
-    def wheels(self, wheels = 4) -> object:
+    def wheels(self, wheels) -> object:
       """ Builder for the property Wheels """
       self.wheels = wheels
       return self

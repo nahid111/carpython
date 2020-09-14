@@ -1,6 +1,7 @@
 ### Run cloud-build-local
 ```bash
 $ cloud-build-local --dryrun=false .
+$ cloud-build-local --dryrun=false --substitutions=_GIT_USERNAME="username",_GIT_PASSWORD="password" .
 ```
 
 ### Run Tests

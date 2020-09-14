@@ -1,24 +1,41 @@
 steps:
 # This step runs the unit-tests
 - id: Testing
-  name: 'python:3.7.6-slim'
+  name: 'python:3.7.6'
   entrypoint: /bin/sh
   args:
   - -c
-  - 'pip install -r requirements.txt && pytest tests/'
+  - |
+    export _GIT_USERNAME=${_GIT_USERNAME} _GIT_PASSWORD=${_GIT_PASSWORD}
+    pip install -r requirements.txt
+    pip list
+    pytest tests/
+
 # This step runs linting
 - id: Linting
-  name: 'python:3.7.6-slim'
+  name: 'python:3.7.6'
   entrypoint: /bin/sh
   args:
   - -c
-  - 'pip install -r requirements.txt && pylint models/ tests/'
+  - |
+    export _GIT_USERNAME=${_GIT_USERNAME} _GIT_PASSWORD=${_GIT_PASSWORD}
+    pip install -r requirements.txt
+    pylint models/ tests/
+
 # This step Generates the Docs
 - id: Documenting
-  name: 'python:3.7.6-slim'
+  name: 'python:3.7.6'
   entrypoint: 'bash'
   args:
   - -c
-  - 'pip install -r requirements.txt'
-  - 'cd docs/'
-  - 'make html'
+  - |
+    export _GIT_USERNAME=${_GIT_USERNAME} _GIT_PASSWORD=${_GIT_PASSWORD}
+    pip install -r requirements.txt
+    cd docs/
+    make html
+
+substitutions:
+    _GIT_USERNAME: '' # default value
+    _GIT_PASSWORD: '' # default value
+
+

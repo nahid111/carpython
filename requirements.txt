@@ -4,3 +4,4 @@ pytest-cov==2.10.1
 sphinx==3.2.1
 sphinx-rtd-theme==0.5.0
 recommonmark==0.6.0
+-e git+https://${_GIT_USERNAME}:${_GIT_PASSWORD}@bitbucket.org/nahid111/my_private_pkg@v2.2.0#egg=my_private_pkg\&subdirectory=python
